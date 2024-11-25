@@ -32,7 +32,7 @@ class _OrdersPageState extends State<OrdersPage> {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: CustomHeader(title: 'Sách đang mượn'),
+        appBar: CustomHeader(title: 'Borrowing Books'),
         body: Padding(
           padding: const EdgeInsets.only(top: 30.0),
           child: FutureBuilder<List<BookLending>>(

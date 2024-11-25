@@ -8,7 +8,7 @@ class BookLending {
   final String creationDate;
   final String dueDate;
   final String? returnDate;
-  final int userId;
+  final String email;
   final int staffId;
 
   BookLending({
@@ -20,7 +20,7 @@ class BookLending {
     required this.creationDate,
     required this.dueDate,
     this.returnDate,
-    required this.userId,
+    required this.email,
     required this.staffId,
   });
 
@@ -34,7 +34,7 @@ class BookLending {
       creationDate: json['creationDate'],
       dueDate: json['dueDate'],
       returnDate: json['returnDate'],
-      userId: json['userid'],
+      email: json['email'],
       staffId: json['staffid'],
     );
   }
